@@ -1,5 +1,5 @@
 class Produit:
-    def __init__(self,nom,prixHT,TVA):
+    def __init__(self,nom,prixHT):
         self.nom = nom
         self.prix = prixHT
         self.TVA = 20
@@ -7,6 +7,12 @@ class Produit:
     def CalculerPrixTTC(self):
         prix_final = self.prix + self.TVA/100
         return prix_final
+
+
+    def afficher_CalculerPrixTTC(self):
+        prix_final = self.prix + self.TVA/100
+        return f"Le prix du produit avec TVA est de {prix_final}€."
+        
     
 
     def afficher_prix(self):
@@ -35,7 +41,7 @@ class Produit:
     
 
 
-p = Produit("pain",1.50,20)
+p = Produit("pain",1.50)
 
 print("------------------------------")
 
@@ -66,6 +72,10 @@ print(p.afficher_tva())
 print("------------------------------")
 
 print(p.Trouver_tva())
+
+print("------------------------------")
+
+print(p.afficher_CalculerPrixTTC())
 
 print("------------------------------")
 
