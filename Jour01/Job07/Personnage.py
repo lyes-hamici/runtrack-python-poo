@@ -6,8 +6,8 @@ class Personnage:
 
     #V2
     '''def __init__(self,x,y):
-        self.x = 0
-        self.y = 0'''
+        self.x = x
+        self.y = y'''
 
 
         
