@@ -26,6 +26,12 @@ class Produit:
     def modif_produit(self,nom,prix):
         self.nom = nom
         self.prix = prix
+
+    def Trouver_tva(self):
+        TVA = self.prix + self.TVA/100
+        TVA = TVA - self.prix
+        return f"La TVA est de {round(TVA,2)}€."
+
     
 
 
@@ -38,6 +44,7 @@ print(p.afficher())
 print("------------------------------")
 
 p.modif_produit("pomme",2)
+
 
 
 print(p.afficher())
@@ -55,6 +62,10 @@ print(p.afficher_prix())
 print("------------------------------")
 
 print(p.afficher_tva())
+
+print("------------------------------")
+
+print(p.Trouver_tva())
 
 print("------------------------------")
 
