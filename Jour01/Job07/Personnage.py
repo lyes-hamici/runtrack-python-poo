@@ -1,7 +1,15 @@
 class Personnage:
-    def __init__(self,x,y):
-        self.x = x
-        self.y = y
+
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+
+    #V2
+    '''def __init__(self,x,y):
+        self.x = 0
+        self.y = 0'''
+
+
         
 
     def bas(self):
@@ -23,7 +31,9 @@ class Personnage:
 
         
 
-p = Personnage(5,5)
+#p = Personnage(5,5) pour la V2
+
+p = Personnage()
 
 print("-----------------")
 
