@@ -3,6 +3,7 @@ class Livre:
         self.__titre = titre
         self.__auteur = auteur
         self.__pages = pages
+        self.__disponible = True
         
 
     def get_titre(self):
@@ -33,6 +34,33 @@ class Livre:
             print("-------------------------")
             print ("Ce nombre de page n'est pas un nombre entier/positif , le nombre de page n'est donc pas modifier.")
             print("-------------------------")
+
+
+
+    def verification(self):
+        if self.__disponible == True:
+            return  True
+        else:
+            return False
+        
+
+    def emprunter(self):
+        
+        if self.verification() == True:
+            self.__disponible = False
+            return "Vous avez emprunter ce livre."
+
+        else:
+            return "Livre déja emprunter."
+        
+
+    def rendre(self):
+        if self.verification() == False:
+            self.__disponible = True
+            return "Livre rendu."
+        
+        else:
+            return "Ce livre est déja ici."
 
 
 
@@ -84,4 +112,33 @@ livre.set_page(512)
 print(livre.get_page())
 
 print("-------------------------")
+
+
+
+print(livre.verification())
+
+print("-------------------------")
+
+print(livre.emprunter())
+
+print("-------------------------")
+
+print(livre.verification())
+
+print("-------------------------")
+
+print(livre.emprunter())
+
+print("-------------------------")
+
+
+print(livre.rendre())
+
+print("-------------------------")
+
+print(livre.rendre())
+
+print("-------------------------")
+
+
 
