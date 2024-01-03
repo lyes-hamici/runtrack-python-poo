@@ -61,7 +61,7 @@ class Commande:
         self.__liste_commande["Prix"] = self.__prix
         self.__liste_commande["Statut"] = self.__statut[1]
 
-        return self.__liste_commande , f"Prix total a payer {self.get_prix()}€ (TVA de {round(self.__TVA,2)} € incluse), Numéro de commande {self.__num_commande}"
+        return f"Vôtre commande {self.__liste_commande} , prix total a payer {self.get_prix()}€ (TVA de {round(self.__TVA,2)} € incluse), Numéro de commande {self.__num_commande}"
     
 
 
@@ -70,7 +70,7 @@ class Commande:
         self.__liste_commande["Prix"] = self.__prix
         self.__liste_commande["Statut"] = self.__statut[0]
 
-        return self.__liste_commande ,  f"Prix total a payer {self.get_prix()}€ (TVA de {round(self.__TVA,2)} € incluse), Numéro de commande {self.__num_commande}"
+        return f"Vôtre commande {self.__liste_commande} , prix total a payer {self.get_prix()}€ (TVA de {round(self.__TVA,2)} € incluse), Numéro de commande {self.__num_commande}"
 
 
     def commande_suivante(self):
