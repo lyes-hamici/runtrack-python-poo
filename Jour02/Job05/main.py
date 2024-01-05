@@ -1,6 +1,3 @@
-from PIL import Image
-import numpy as np
-
 class Voiture:
     def __init__(self,marque,modèle,année,kilométrage):
         self.__marque = marque
