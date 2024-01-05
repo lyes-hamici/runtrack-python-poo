@@ -1,5 +1,3 @@
-
-
 class Personne:
     def __init__(self,age=14):#initier à 14 de base
         self.__age = age
