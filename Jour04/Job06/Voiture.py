@@ -10,6 +10,14 @@ class Voiture(Vehicule):
     def set_porte(self,n):
         self.__porte = n
 
+    def demarrer(self):
+        if  5 < self.verifier_plein() <= 50:
+            self.__en_marche = True
+            return f"Avec {self.get_modele()} {self.get_marque()} vous êtes satellisé."
+        else:
+            return "Pas assez d'essence pour demarrer."
+
+
 
 
     def informationsVehicule(self):

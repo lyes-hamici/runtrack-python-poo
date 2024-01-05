@@ -8,19 +8,19 @@ class Vehicule:
         self.__reservoir = 50
 
     def get_marque(self):
-        return f"Marque = {self.__marque}"
+        return self.__marque
 
     def get_modele(self):
-        return f"Modele = {self.__modele}"
+        return self.__modele
 
     def get_annee(self):
-        return f"Annee = {self.__annee}"
+        return self.__annee
 
     def get_prix(self):
-        return f"Prix = {self.__prix} €"
+        return self.__prix
     
     def get_en_marche(self):
-        return f"Voiture en route = {self.__en_marche}"
+        return self.__en_marche
     
 
 
