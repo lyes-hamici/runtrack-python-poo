@@ -10,6 +10,14 @@ class Moto(Voiture):
         self.__roue = n
 
 
+    def demarrer(self):
+        if  5 < self.verifier_plein() <= 50:
+            self.__en_marche = True
+            return "Vroum Vroum (bruit de moteur de fou)"
+        else:
+            return "Pas assez d'essence pour demarrer."
+
+
     def informationsVehicule(self):
         return f" Marque = {self.get_marque()} \n Modele = {self.get_modele()} \n Annee = {self.get_annee()} \n Prix = {self.get_prix()} \n Roue = {self.__roue} "
     

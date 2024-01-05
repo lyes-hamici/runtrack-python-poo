@@ -10,12 +10,21 @@ print("-----------------------------------")
 
 print(v.informationsVehicule())
 
+
+print(v.demarrer())
+
 print("-----------------------------------")
 
 print(v2.informationsVehicule())
 
+
+print(v2.demarrer())
+
 print("-----------------------------------")
 
 print(moto.informationsVehicule())
+
+
+print(moto.demarrer())
 
 print("-----------------------------------")
