@@ -32,8 +32,7 @@ class Joueur:
         self.experience = 0
 
     def choix_progression_exp(self):
-        """progression du niveau avec l'expérience
-           note:  progression de base proposée par M Colin"""
+        """progression du niveau avec l'expérience"""
         # le joueur n'a pas changé du niveau
         promu = False
         # conditions pour changer de niveau
